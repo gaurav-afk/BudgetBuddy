@@ -7,8 +7,11 @@ export const basicColors = {
     // secondaryLight: '',
     // secondaryDark: '',
     
-    background: '#1E1E1E',   // Dark Gray
-    backgroundLight: '#272727',    // Light Gray
+    background: '#1E1E1E',   // Black
+    backgroundLight: '#272727',    // Dark Gray
+    backgroundLighter: "#716C6C",
+    backgroundLightest: "#D9D9D9", // Light Gray
+
 
     textPrimary: '#FFFFFF',  // White
     textSecondary: '#676D75', // Slate Gray
@@ -16,6 +19,11 @@ export const basicColors = {
     
     numberPositive: "#54A652", // Green
     numberNegative: "#FF5F00", // Orange Red
+
+    iconLight: "#FFFAE6",
+    iconTextLight: "#FFFAE6",
+
+    currencyWrapper: "#585757",
 
     // surface: '#FFFFFF',
     // error: '#B00020',

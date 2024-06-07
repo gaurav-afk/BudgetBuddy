@@ -1,7 +1,7 @@
 import { View, Text, SafeAreaView, StyleSheet, ScrollView } from "react-native";
 import React from "react";
 import { FontAwesome } from "@expo/vector-icons";
-import s from "./styles/screens/transactions.style";
+import s from "./styles/transactions.style";
 
 const TransactionList = () => {
   return (

@@ -12,14 +12,7 @@ import {
   Image,
 } from "react-native";
 import styles from "../app/styles/RegisterScreen.styles";
-// import logger from "../utils/logger";
-// import { createUser } from '../redux/thunks/authThunks';
-// import Snackbar from 'react-native-snackbar';
 import { useNavigation } from "@react-navigation/native";
-// import screen from '../constants/screenNames';
-// import { useDispatch, useSelector } from 'react-redux'
-// import { RootState } from '../redux/store';
-// import { errorNotified } from '../redux/slices/authSlice';
 import { InputField } from "../components/InputField";
 
 const RegisterScreen = () => {
@@ -30,59 +23,6 @@ const RegisterScreen = () => {
   const [passwordVisible, setPasswordVisible] = useState<boolean>(false);
   const [confirmPasswordVisible, setConfirmPasswordVisible] =
     useState<boolean>(false);
-  // const dispatch = useDispatch();
-  // const authState = useSelector((state: RootState) => state.auth);
-
-  // useEffect(() => {
-  //   if (authState.error) {
-  //     Snackbar.show({
-  //       text: `Failed to create account: ${authState.error}`,
-  //       duration: Snackbar.LENGTH_SHORT,
-  //     });
-
-  //     dispatch(errorNotified());
-  //   }
-  // }, [authState]);
-
-  // const togglePasswordVisibility = () => {
-  //   logger.info("Toggle password visibility");
-  //   setPasswordVisible(!passwordVisible);
-  // };
-
-  // const toggleConfirmPasswordVisibility = () => {
-  //   logger.info("Toggle confirm password visibility");
-  //   setConfirmPasswordVisible(!confirmPasswordVisible);
-  // };
-
-  // const onCreateBtnClicked = async () => {
-  //   if (
-  //     email.length == 0 ||
-  //     password.length == 0 ||
-  //     confirmPassword.length == 0
-  //   ) {
-  //     Snackbar.show({
-  //       text: `All Inputs are required`,
-  //       duration: Snackbar.LENGTH_SHORT,
-  //     });
-  //   }
-  //   if (password !== confirmPassword) {
-  //     Snackbar.show({
-  //       text: `Password does not match with confirm password.`,
-  //       duration: Snackbar.LENGTH_SHORT,
-  //     });
-  //     return;
-  //   }
-  //   // TODO: password validator
-  //   if (password.length < 6) {
-  //     Snackbar.show({
-  //       text: `Password should have at least 6 characters`,
-  //       duration: Snackbar.LENGTH_SHORT,
-  //     });
-  //     return;
-  //   }
-
-  //   dispatch(createUser({ email, password }));
-  // };
 
   return (
     <ScrollView
