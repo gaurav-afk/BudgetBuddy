@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
 import * as typography from "./typography"
-import { basicColors } from "./colors"
+import colors, { basicColors } from "./colors"
 
 export default StyleSheet.create({
   scrollView: {
@@ -85,7 +85,7 @@ export default StyleSheet.create({
     alignItems: "center",
   },
   currencyContainer: {
-    width: 100,
+    width: 70,
     borderRadius: 20,
     backgroundColor: basicColors.backgroundLight,
     height: 50,
@@ -208,14 +208,15 @@ addTag: {
   width: "25%",
 },
 notesText: {
-  color: "#EDEDED",
+  color: colors.textSecondary,
   textTransform: "capitalize",
   paddingTop: 10,
   fontFamily: typography.fontFamilies.primary,
   fontWeight: typography.fontWeights.regular,
-  fontSize: typography.fontSizes.small,
+  fontSize: typography.fontSizes.regular,
 },
 notesContainer: {
+  width: "100%",
   marginBottom: 100,
   marginTop: 10,
   borderRadius: 20,

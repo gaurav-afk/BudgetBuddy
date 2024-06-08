@@ -84,6 +84,7 @@ const NewExpensesScreen = () => {
                 placeholder="Name"
                 value={name}
                 onChangeText={setName}
+                width="100%"
               />
             </View>
             <View style={styles.currencyPriceRow}>
@@ -95,6 +96,7 @@ const NewExpensesScreen = () => {
                 placeholder="Price"
                 value={price}
                 onChangeText={setPrice}
+                width="60%"
               />
             </View>
           </View>
@@ -107,13 +109,16 @@ const NewExpensesScreen = () => {
               placeholder="Store"
               value={store}
               onChangeText={setStore}
+              width="47%"
             />
             <TransactionInfo
               placeholder="Address"
               value={address}
               onChangeText={setAddress}
+              width="47%"
             />
           </View>
+          
           {/* time and frequency ---------------------------------------------------------------------------------- */}
           <View style={styles.detailsRow}>
             <View style={styles.timeContainer}>

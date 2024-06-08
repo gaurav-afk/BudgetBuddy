@@ -1,17 +1,18 @@
 import { StyleSheet } from "react-native";
-import { basicColors } from "../colors";
+import colors, { basicColors } from "../colors";
 import typography from "../typography";
 
 export default StyleSheet.create({
     container: {
       flexGrow: 1,
-      padding: 20,
+      // padding: 20,
+      marginTop: '20%',
       maxWidth: 372,
       alignItems: 'stretch',
     },
     header: {
       alignSelf: 'center',
-      marginTop: 42,
+      marginTop: 20,
     },
     headerText: {
       fontFamily: typography.fontFamilies.primary,
@@ -21,7 +22,9 @@ export default StyleSheet.create({
       textTransform: 'capitalize',
     },
     advancedOptions: {
-      backgroundColor: 'rgba(51, 51, 51, 1)',
+      // backgroundColor: 'rgba(51, 51, 51, 1)',
+      // backgroundColor: '#312F2F',
+      backgroundColor: colors.backgroundLight,
       borderRadius: 25,
       padding: 12,
       shadowColor: '#000',
@@ -29,11 +32,14 @@ export default StyleSheet.create({
       shadowOpacity: 0.25,
       shadowRadius: 4,
       elevation: 5,
-      marginVertical: 20,
+      marginVertical: 40,
+      // paddingVertical: 20
     },
     advancedOptionsText: {
+      fontSize: typography.fontSizes.large,
       fontFamily: typography.fontFamilies.primary,
-       color: basicColors.textPrimary,
+      // color: basicColors.backgroundLighter,
+      color: colors.textSecondary,
     },
     blockRow:{
         display: "flex",
@@ -50,17 +56,17 @@ export default StyleSheet.create({
       color: basicColors.textPrimary,
     },
     selectedTab: {
-        backgroundColor: basicColors.primaryLight,
+        backgroundColor: basicColors.primary,
         padding: 6,
         borderRadius: 5,
       },
     selectedTabText: {
-         color: basicColors.primary,
+         color: basicColors.background,
       },
     divider: {
-      backgroundColor: '#D9D9D9',
+      backgroundColor: colors.backgroundLighter,
       height: 1,
-      marginVertical: 16,
+      marginBottom: 10
     },
     repaymentSummary: {
       marginVertical: 16,
@@ -102,21 +108,26 @@ export default StyleSheet.create({
     actionButtons: {
       flexDirection: 'row',
       justifyContent: 'space-between',
-      marginTop: 193,
+      marginTop: 40,
       maxWidth: 343,
       width: '100%',
     },
     cancelButton: {
-      backgroundColor: '#6D0202',
+      // backgroundColor: '#6D0202',
+      backgroundColor: '#BB2525',
+      width: "40%",
       borderRadius: 20,
       paddingVertical: 17,
-      paddingHorizontal: 48,
+      alignItems: 'center',
+      paddingHorizontal: 20,
     },
     okButton: {
       backgroundColor: '#54A652',
+      width: "40%",
       borderRadius: 20,
       paddingVertical: 17,
-      paddingHorizontal: 60,
+      alignItems: 'center',
+      paddingHorizontal: 20,
     },
     buttonText: {
       fontFamily: typography.fontFamilies.primary,

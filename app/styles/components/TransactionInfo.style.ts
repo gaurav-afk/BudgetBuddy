@@ -4,12 +4,11 @@ import { StyleSheet } from "react-native"
 
 export default StyleSheet.create({
 infoContainer: {
-    width: "48%",
+    width: "47%",
     fontFamily: typography.fontFamilies.primary,
     borderRadius: 20,
     backgroundColor: basicColors.backgroundLight,
-    paddingHorizontal: 20,
-    paddingVertical: 17,
+    paddingVertical: 10,
     justifyContent: "center",
   },
   textInput: {
